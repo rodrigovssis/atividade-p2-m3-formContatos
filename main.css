@@ -1,0 +1,13 @@
+form {padding: 0px; display:grid; width: 100%; }
+
+.container { max-width: 960px; width: 100%; margin: 0 auto;}
+
+form input {font-size: 16px; background-color: #fff; padding: 8px;}
+body { font-family: Arial, sans-serif; background-color: #f4f4f4; }
+table { border-collapse: collapse; width: 100%; background-color: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+th, td { padding: 10px; text-align: left; }
+th { background-color: #4CAF50; color: white; }
+tr:nth-child(even) { background-color: #f2f2f2; }
+input[type="text"], input[type="tel"], input[type="submit"] { padding: 10px; margin: 10px; } 
+
+

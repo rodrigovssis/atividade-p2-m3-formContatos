@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="main.css">
+    <head>
+        <h1 style="text-align: center; color: #4CAF50;">Formulário de Contatos <img src="Whatsapp-logo.png" alt="WhatsApp Logo" style="width: 40px; height: 40px;"></h1>
+        <div class="container">
+    </head>
+            <body>
+                <form id="contactForm"> <input type="text" id="name" required placeholder="Nome"> <input type="tel" id="phone" required placeholder="Telefone"> <input type="submit" value="Cadastrar"> </form> 
+                <table id="contactTable">
+                    <br><br><br>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                    </tr>
+                </table>
+        </div>
+                <script> document.getElementById("contactForm").addEventListener("submit", function(event) { event.preventDefault(); var name = document.getElementById("name").value; var phone = document.getElementById("phone").value; var table = document.getElementById("contactTable"); var row = table.insertRow(-1); var cell1 = row.insertCell(0); var cell2 = row.insertCell(1); cell1.innerHTML = name; cell2.innerHTML = phone; document.getElementById("name").value = ""; document.getElementById("phone").value = ""; });
+                </script>
+            </body>
+</html>
